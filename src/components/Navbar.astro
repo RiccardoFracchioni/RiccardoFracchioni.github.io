@@ -1,104 +1,76 @@
 <nav>
 
-<div class="nav-container">
+  <div class="nav-container">
 
-<a href="/" class="logo">
-Riccardo Fracchioni
-</a>
+    <a href="/" class="logo">
+      Riccardo Fracchioni
+    </a>
 
-<div class="links">
-<a href="/">Home</a>
-<a href="/research">Research</a>
-<a href="/publications">Publications</a>
-<a href="/cv">CV</a>
-<a href="/contact">Contact</a>
-</div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/research">Research</a>
+      <a href="/publications">Publications</a>
+      <a href="/cv">CV</a>
+      <a href="/contact">Contact</a>
+    </div>
 
-</div>
+  </div>
 
 </nav>
 
 <style>
+  nav {
+    border-bottom: 1px solid #dfe3e8;
+    background: rgba(251, 250, 248, 0.95);
+  }
 
-nav {
-    border-bottom: 1px solid #ddd;
-    padding: 25px 0;
-}
-
-.nav-container {
-    max-width: 850px;
-    margin: auto;
-    padding: 0 25px;
+  .nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 22px 30px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
 
-.logo {
-    font-family: Georgia, serif;
-}
+  .logo {
+    color: #20242a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.08rem;
+  }
 
-.links {
+  .nav-links {
     display: flex;
     gap: 25px;
-}
+  }
 
-.links a {
-    color: #555;
-}
+  .nav-links a {
+    color: #667085;
+    font-size: 0.92rem;
+  }
 
-</style>
+  .nav-links a:hover {
+    color: #294d70;
+  }
 
-<style>
+  @media (max-width: 650px) {
+    .nav-container {
+      padding: 18px 22px;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 15px;
+    }
 
-nav {
-    border-bottom: 1px solid #ddd;
-    padding: 25px 0;
-}
+    .nav-links {
+      width: 100%;
+      gap: 16px;
+      overflow-x: auto;
+      padding-bottom: 3px;
+    }
 
-
-.nav-container {
-
-max-width: 850px;
-margin: auto;
-padding: 0 25px;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-}
-
-
-.logo {
-
-font-family: Georgia, serif;
-font-size:1.2rem;
-
-}
-
-
-.links {
-
-display:flex;
-gap:25px;
-
-}
-
-
-.links a {
-
-font-size:0.95rem;
-color:#555;
-
-}
-
-
-.links a:hover {
-
-color:#000;
-
-}
-
+    .nav-links a {
+      white-space: nowrap;
+    }
+  }
 </style>
