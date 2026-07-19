@@ -475,3 +475,54 @@ section {
         max-width: 550px;
     }
 }
+.talk-list{
+    display:flex;
+    flex-direction:column;
+    gap:3rem;
+    margin-top:4rem;
+}
+
+.talk-item{
+    display:grid;
+    grid-template-columns:120px 1fr;
+    gap:2rem;
+    padding-bottom:2rem;
+    border-bottom:1px solid var(--border);
+}
+
+.talk-date{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    line-height:1;
+}
+
+.talk-date .day{
+    font-size:2.4rem;
+    font-weight:700;
+    color:var(--accent);
+}
+
+.talk-date .month{
+    margin-top:.3rem;
+    font-size:.95rem;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    color:var(--muted);
+}
+
+.talk-date .year{
+    margin-top:.25rem;
+    font-size:.95rem;
+    color:var(--muted);
+}
+
+.talk-content h2{
+    margin-bottom:.4rem;
+}
+
+.talk-venue{
+    font-style:italic;
+    color:var(--muted);
+    margin-bottom:1rem;
+}
