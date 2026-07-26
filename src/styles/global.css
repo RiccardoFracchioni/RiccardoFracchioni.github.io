@@ -380,15 +380,20 @@ section {
 
 .research-area {
     display: grid;
-    grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.4fr);
-    gap: 70px;
+    grid-template-columns: minmax(420px, 1.15fr) minmax(0, 1fr);
+    gap: 60px;
     align-items: start;
     padding-top: 70px;
     border-top: 1px solid var(--border);
 }
 
+.research-area-reversed {
+    grid-template-columns: minmax(0, 1fr) minmax(420px, 1.15fr);
+}
+
 .research-area-reversed .research-image {
     order: 2;
+    justify-self: end;
 }
 
 .research-area-reversed .research-content {
@@ -399,8 +404,7 @@ section {
     position: sticky;
     top: 40px;
     width: 100%;
-    max-width: 340px;
-    aspect-ratio: 3 / 2;
+    max-width: none;
     overflow: hidden;
     border-radius: 6px;
     box-shadow: 0 15px 35px rgba(28, 39, 49, 0.12);
@@ -409,8 +413,8 @@ section {
 .research-image img {
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     object-position: center;
 }
 
@@ -420,6 +424,7 @@ section {
     justify-content: center;
     min-height: 225px;
     border: 1px solid var(--border);
+    border-radius: 6px;
     background:
         linear-gradient(
             135deg,
@@ -443,12 +448,18 @@ section {
     letter-spacing: 0.12em;
 }
 
+.research-content {
+    min-width: 0;
+}
+
 .research-content h2 {
+    max-width: 650px;
     margin-bottom: 30px;
     font-size: clamp(2rem, 4vw, 3rem);
 }
 
 .research-content > p:not(.research-number) {
+    max-width: 680px;
     color: #444b53;
     font-size: 1.03rem;
 }
@@ -462,7 +473,8 @@ section {
         gap: 90px;
     }
 
-    .research-area {
+    .research-area,
+    .research-area-reversed {
         grid-template-columns: 1fr;
         gap: 35px;
     }
@@ -472,35 +484,13 @@ section {
     .research-area-reversed .research-content {
         position: static;
         order: initial;
+        justify-self: start;
     }
 
     .research-image,
     .research-image-placeholder {
         width: 100%;
-        max-width: 340px;
-    }
-}
-
-@media (max-width: 800px) {
-    .research-list {
-        gap: 90px;
-    }
-
-    .research-area {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .research-image,
-    .research-area-reversed .research-image,
-    .research-area-reversed .research-content {
-        position: static;
-        order: initial;
-    }
-
-    .research-image img,
-    .research-image-placeholder {
-        max-width: 550px;
+        max-width: 600px;
     }
 }
 .talk-list{

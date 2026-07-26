@@ -20,7 +20,7 @@ import Layout from "../layouts/Layout.astro";
 
       <div class="research-image">
         <img
-          src="/images/ml-epistemology.jpg"
+          src="/images/scientific-understanding.png"
           alt="Scientific data and machine-learning visualisation"
         />
       </div>
@@ -28,7 +28,7 @@ import Layout from "../layouts/Layout.astro";
       <div class="research-content">
         <p class="research-number">01</p>
 
-        <h2>Epistemology of Machine Learning</h2>
+        <h2>Machine Learning and Scientific Understanding</h2>
 
         <p>
           Machine learning has become an increasingly important component
@@ -88,7 +88,7 @@ import Layout from "../layouts/Layout.astro";
           question is not only whether language models produce fluent and
           successful linguistic behaviour, but whether their outputs depend
           on internal representations and procedures that are genuinely
-          sensitive to conceptual information rather than merely to
+          sensitive to conceptual information rather than to
           superficial statistical regularities. This requires distinguishing
           several dimensions of linguistic competence, including
           generalisation, compositionality, inferential and referential
@@ -103,13 +103,7 @@ import Layout from "../layouts/Layout.astro";
           heuristics, or more general forms of competence. Mechanistic
           interpretability therefore provides an important source of evidence
           by examining how linguistic information is represented and causally
-          used within the model. I am especially interested in the
-          philosophical limits of this evidence: probing may show that
-          information is recoverable from a model's activations without
-          establishing that it guides the model's output, while
-          intervention-based methods aim to identify causal roles but face
-          difficulties arising from the distributed and sub-conceptual
-          character of neural representations. My research asks how such
+          used within the model. My research asks how such
           findings should bear on claims that language models understand
           meaning and which functional and mechanistic conditions should be
           satisfied before linguistic competence can responsibly be
@@ -117,8 +111,54 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
 
-    </article>
+     </article>
 
-  </div>
+  <article class="research-area">
+
+    <div class="research-image">
+      <img
+        src="/images/ml-climate-models.png"
+        alt="Visualisation of machine learning integrated into climate modelling"
+      />
+    </div>
+
+    <div class="research-content">
+      <p class="research-number">03</p>
+
+      <h2>Machine Learning and Objectivity in Climate Models</h2>
+
+      <p>
+        A third area of my research concerns the epistemological and normative
+        consequences of integrating machine learning into scientific models, 
+        especially climate models. The automation of scientific practices is sometimes assumed
+        to reduce subjectivity by replacing expert judgement with data-driven
+        optimisation. Yet machine learning does not eliminate methodological
+        choices, but it relocates them to less visible stages of
+        the modelling process, including data selection, model architecture,
+        hyperparameter settings, loss functions, validation metrics, and
+        decisions about how a machine-learning component is integrated into a
+        larger scientific model. I investigate how these technical decisions
+        express different epistemic priorities and how they affect the objectivity of the results.
+      </p>
+
+      <p>
+        Climate modelling provides a central case study for this research because
+        machine learning is increasingly used to emulate complex physical
+        processes and replace traditional parameterisations that depend
+        on expert judgement. In this context, scientists must negotiate
+        trade-offs between predictive accuracy, interpretability, physical
+        plausibility, robustness, computational efficiency, and sensitivity to
+        uncertainty. These choices may also involve inductive risk, since
+        different kinds of predictive error can have unequal scientific and
+        practical consequences. My research therefore asks whether the use of
+        machine learning makes scientific modelling more objective or whether it
+        instead transforms, preserves, and displaces the value-laden commitments
+        already present in traditional modelling practices.
+      </p>
+    </div>
+
+  </article>
+
+</div>
 
 </Layout>
